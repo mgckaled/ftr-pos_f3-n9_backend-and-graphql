@@ -2,6 +2,8 @@
 
 # Backend com GraphQL
 
+claude --resume "graphql-api-manual-tests"
+
 Nesta disciplina de Back-end com GraphQL, você vai aprender na prática como construir uma API moderna e tipada utilizando Node.js, Apollo Server, TypeGraphQL e Prisma com SQLite. Ao longo das aulas, o projeto Mindshare servirá como base para explorar queries, mutations, autenticação com JWT, uso de decorators, middlewares e field resolvers, entendendo como o GraphQL otimiza consultas e simplifica a comunicação entre front-end e back-end.
 
 ## Conteúdo

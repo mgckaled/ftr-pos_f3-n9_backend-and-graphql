@@ -2,6 +2,7 @@ import 'reflect-metadata'
 import express from 'express'
 import cors from 'cors'
 import { ApolloServer } from '@apollo/server'
+import { ApolloServerPluginLandingPageLocalDefault } from '@apollo/server/plugin/landingPage/default'
 import { buildSchema } from 'type-graphql'
 import { expressMiddleware } from '@as-integrations/express5'
 import { AuthResolver } from './resolvers/auth.resolver'
@@ -34,6 +35,7 @@ async function bootstrap() {
 
   const server = new ApolloServer({
     schema,
+    plugins: [ApolloServerPluginLandingPageLocalDefault({ embed: true })],
   })
 
   await server.start()
