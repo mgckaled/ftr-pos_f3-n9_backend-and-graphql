@@ -12,7 +12,7 @@ Após o login, configurar os headers na aba **Headers** do sandbox:
 
 ```json
 {
-  "Authorization": "Bearer SEU_TOKEN_AQUI",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNlYzA0YThhLTcwMmQtNGJhMi04ZjU5LTc4NWFlYWMxYTcwNyIsImVtYWlsIjoiam9hb0B0ZXN0ZS5jb20iLCJpYXQiOjE3NzQzNTAwMDEsImV4cCI6MTc3NDQzNjQwMX0.QRFpt7wWw-Uhot6dvE2uE2kpfONT2jLRzm09kg8pd8A",
   "content-type": "application/json"
 }
 ```
@@ -374,7 +374,7 @@ query {
 
 ## Ordem Recomendada de Execução
 
-```
+```text
 register → login → (setar token + content-type nos headers)
 → createIdea × 2 → listIdeas (ver dados aninhados)
 → toggleVote → getIdea (verificar countVotes) → toggleVote (desfaz)

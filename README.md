@@ -70,6 +70,9 @@ Plataforma colaborativa para criação, votação e discussão de ideias em equi
 - **ORM**: Prisma v6 (SQLite)
 - **Auth**: JWT + bcryptjs
 
+> Documentação técnica detalhada de cada camada, padrões arquiteturais e fluxo de requisição em [`backend/ARCHITECTURE.md`](./backend/ARCHITECTURE.md).
+> Roteiro de testes manuais via GraphQL (curl e sandbox) em [`TESTING.md`](./TESTING.md).
+
 #### Modelos de Dados
 
 | Modelo    | Campos principais                                              |
